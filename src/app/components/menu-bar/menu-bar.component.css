@@ -1,0 +1,31 @@
+.container__menu-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-bar__icone > img{
+  width: 50px;
+  margin: 10px;
+}
+
+.menu-bar__items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+}
+.menu-bar__items > a{
+text-decoration: none;
+}
+
+.menu-bar__redes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+}
+.menu-bar__redes > a > img{
+  width: 30px;
+}

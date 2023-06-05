@@ -1,0 +1,21 @@
+.container__home {
+  display: flex;
+  flex-direction: column;
+}
+.container__home hr {
+  border-color: gray;
+}
+.articles {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.articles__main {
+  width: 40%;
+}
+
+.articles__others {
+  width: 60%;
+  margin: 10px;
+}
