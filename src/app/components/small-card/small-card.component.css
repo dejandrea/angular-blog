@@ -1,6 +1,15 @@
 .container__small-card {
   display: flex;
   width: 100%;
+  /* gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 150px; */
+}
+
+.container__small-card > a {
+  display: flex;
+  width: 100%;
   gap: 10px;
   margin-top: 10px;
   margin-bottom: 10px;

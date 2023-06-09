@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container__content{
+  border-top: 1px solid gray;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.container__content > a{
+  align-self: flex-start;
+
+}
+
+.content__cover{
+
+
+}
+.content__cover > img{
+  width: 500px;
+  min-width: 500px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.content__title{
+
+}
+
+.content__description{
+  margin-top: 15px;
+}
+.content__description > p{
+  color:gray
+}

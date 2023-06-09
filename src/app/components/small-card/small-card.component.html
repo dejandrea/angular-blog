@@ -1,11 +1,13 @@
 <div class="container__small-card">
-  <div class="small-card__img">
-    <img src="{{photoCover}}" alt="">
-  </div>
-  <div class="small-card__text">
-    <p> February 11, 2022</p>
-    <h2>
-      {{cardTitle}}
-    </h2>
-  </div>
+  <a [routerLink]="['content',id]" target="_blank" rel="noopener noreferrer">
+    <div class="small-card__img">
+      <img src="{{ photoCover }}" alt="" />
+    </div>
+    <div class="small-card__text">
+      <p>February 11, 2022</p>
+      <h2>
+        {{ cardTitle }}
+      </h2>
+    </div>
+  </a>
 </div>

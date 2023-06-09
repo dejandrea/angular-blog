@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { dataFake } from 'src/app/data/dataFake';
 
 @Component({
   selector: 'app-big-card',
@@ -7,18 +8,31 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class BigCardComponent implements OnInit {
 
-  @Input()
+  // @Input()
   photoCover:string = "";
 
-  @Input()
+  // @Input()
   cardTitle:string = "";
 
-  @Input()
+  // @Input()
   cardDescription:string = ``;
 
-  constructor() { }
+  @Input()
+  id:string = "1";
+
+  constructor() {
+    this.setValuesToComponent(this.id)
+  }
 
   ngOnInit(): void {
+  }
+
+  setValuesToComponent(id: string | null) {
+    const result = dataFake.filter(article => article.id == id )[0]
+
+    this.cardTitle = result.title
+    this.photoCover = result.photo
+    this.cardDescription = result.description
   }
 
 }
