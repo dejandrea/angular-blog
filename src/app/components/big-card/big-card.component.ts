@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { dataFake } from 'src/app/data/dataFake';
 
 @Component({
@@ -18,13 +19,14 @@ export class BigCardComponent implements OnInit {
   cardDescription:string = ``;
 
   @Input()
-  id:string = "1";
+  id: string | null = '0';
 
-  constructor() {
-    this.setValuesToComponent(this.id)
-  }
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
+    //this.route.paramMap.subscribe((value) => (this.id = value.get('id')));
+    //console.log(this.id)
+    this.setValuesToComponent(this.id)
   }
 
   setValuesToComponent(id: string | null) {
@@ -34,5 +36,5 @@ export class BigCardComponent implements OnInit {
     this.photoCover = result.photo
     this.cardDescription = result.description
   }
-
 }
+

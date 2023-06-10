@@ -2,10 +2,11 @@
   color: aliceblue;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 150px;
+  font-size: 100px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .container__menu-title > hr {
   margin-top: 20px;

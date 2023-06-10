@@ -38,5 +38,6 @@
   margin-top: 15px;
 }
 .content__description > p{
-  color:gray
+  color:gray;
+  text-align: center;
 }

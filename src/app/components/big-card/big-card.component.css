@@ -1,12 +1,12 @@
 .container__big-card {
   /* border: solid 2px white; */
-  width: 400px;
+  width: 600px;
   height: 500px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 15px;
-  margin: 10px;
+  margin: 25px;
   padding: 2px;
 }
 .container__big-card > a{
