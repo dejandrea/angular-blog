@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 .container__home hr {
-  border-color: gray;
+  border-color: rgb(139, 26, 143);
 }
 .articles {
   display: flex;
